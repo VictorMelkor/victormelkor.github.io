@@ -1,0 +1,32 @@
+#hero {
+  position: relative;
+  min-height: 25vh; /* garante que ocupa pelo menos a altura da tela */
+  overflow: hidden;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+#hero .container {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+}
+
+
+#hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+
+
+

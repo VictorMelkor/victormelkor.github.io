@@ -1,0 +1,46 @@
+.justificado {
+  text-align: justify;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+section {
+  background-color: var(--background-color);
+  padding: 60px 0; /* ou o valor que quiser para espaçamento vertical */
+}
+
+#about.section {
+  padding-top: 0px !important;
+}
+
+.contact-map {
+  width: 100%;
+  height: 150px; /* ou outro valor que quiser */
+  border: 0;
+}
+
+.contact .info-item i.bi {
+  font-size: 24px;
+  background: #f4fafd;
+  color: var(--accent-color);
+  padding: 10px;        /* menor padding para diminuir o círculo */
+  border-radius: 50%;   /* fundo circular */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  width: 44px;          /* largura fixa para manter círculo */
+  height: 44px;         /* altura fixa para manter círculo */
+  text-align: center;   /* centraliza o ícone no círculo */
+  line-height: 24px;    /* alinhamento vertical do ícone */
+}
+
+.contact .info-item:hover i.bi {
+  color: #fff;
+  background: var(--accent-color);
+  border: 2px solid var(--accent-color);
+}

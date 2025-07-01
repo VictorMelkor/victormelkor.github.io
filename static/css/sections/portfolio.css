@@ -1,0 +1,124 @@
+/* Garante que a imagem fique dentro dos limites ao fazer zoom */
+.portfolio .portfolio-content {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Efeito de transição na imagem */
+.portfolio .portfolio-content img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  min-height: 200px;
+  max-height: 200px;
+  object-fit: cover;
+  width: 100%;
+  
+}
+
+/* Informações dentro da imagem (inicialmente ocultas) */
+.portfolio .portfolio-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+/* Ao passar o mouse, exibe info */
+.portfolio .portfolio-item:hover .portfolio-info {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Efeito ao passar o mouse */
+.portfolio .portfolio-item:hover .portfolio-content img {
+  transform: scale(1.1);
+  filter: brightness(0.3);
+}
+
+/* Título do projeto */
+.portfolio .portfolio-info h4 {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: var(--accent-color);
+  color: #fff;
+  padding: 4px 10px;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Descrição aparece abaixo da imagem */
+.portfolio .portfolio-info p {
+  position: absolute;
+  bottom: -45px;
+  left: 0;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold; /* <== aqui */
+  text-align: center;
+  color: #fff;
+  padding-top: 10px;
+  transition: bottom 0.3s ease-in-out;
+  font-family: var(--nav-font);
+}
+
+
+.portfolio .portfolio-item:hover .portfolio-info p {
+  bottom: -5px;
+}
+
+/* Container centralizado para os ícones */
+.portfolio .portfolio-info .portfolio-links {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 1px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo dos ícones */
+.portfolio .portfolio-info .portfolio-links a {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.portfolio .portfolio-info .portfolio-links a:hover {
+  color: #fff;
+  background: transparent;
+}
+
+
+/* Filtros */
+.portfolio .portfolio-filters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+}
+
+.portfolio .portfolio-filters li {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 6px 15px;
+  font-weight: 600;
+  color: #444;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.portfolio .portfolio-filters li.filter-active,
+.portfolio .portfolio-filters li:hover {
+  background: var(--accent-color);
+  color: #fff;
+}
+

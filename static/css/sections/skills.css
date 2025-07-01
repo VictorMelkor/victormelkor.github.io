@@ -1,0 +1,42 @@
+.progress {
+  margin-bottom: 20px;
+  position: relative; /* se não tiver */
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  position: static; /* garante que não fique sobreposto */
+  z-index: 2;
+  color: var(--default-color); /* texto visível */
+}
+
+.progress-bar-wrap {
+  background: #eee;
+  border-radius: 4px;
+  height: 10px;
+  width: 100%;
+  overflow: hidden;        /* Garante que a azul não vaze */
+  position: relative;
+}
+
+.progress-bar {
+  background: #149ddd;
+  height: 100%;
+  width: 70%;
+  border-radius: 4px 0 0 4px; /* Mantém canto esquerdo arredondado */
+  transition: width 0.6s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.progress-bar-wrap,
+.progress-bar {
+  display: block;
+}
+
