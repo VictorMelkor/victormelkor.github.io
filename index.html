@@ -3,33 +3,37 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Victor Rodrigues </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Victor Rodrigues | Programador Full Stack</title>
+  <meta name="description" content="Portfólio profissional de Victor Rodrigues, programador Full Stack com experiência em Python, Django e desenvolvimento web responsivo." />
+  <meta name="author" content="Victor Rodrigues">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://victormelkor.github.io/" />
 
   <!-- Favicons -->
   <link href="static/img/favicon.png" rel="icon" />
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto&family=Poppins&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
-  <!-- Bootstrap CSS (apenas o minificado, que já inclui grid, reboot e utilities) -->
+
+  <!-- Bootstrap CSS -->
   <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Bootstrap Icons -->
   <link href="static/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet" />
+
   <!-- Vendor CSS -->
   <link href="static/vendor/aos/aos.css" rel="stylesheet" />
   <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
   <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
   <!-- Custom CSS -->
   <link href="static/css/base.css" rel="stylesheet" />
   <link href="static/css/utilities.css" rel="stylesheet" />
-  <!-- Layout -->
   <link href="static/css/layout/header.css" rel="stylesheet" />
   <link href="static/css/layout/footer.css" rel="stylesheet" />
   <link href="static/css/layout/navmenu.css" rel="stylesheet" />
   <link href="static/css/layout/scrolltop.css" rel="stylesheet" />
-  <!-- Sections -->
   <link href="static/css/sections/hero.css" rel="stylesheet" />
   <link href="static/css/sections/about.css" rel="stylesheet" />
   <link href="static/css/sections/portfolio.css" rel="stylesheet" />
@@ -42,11 +46,11 @@
   <link href="static/css/sections/testimonials.css" rel="stylesheet" />
   <link href="static/css/custom.css" rel="stylesheet" />
   <link href="static/css/sections/skills.css" rel="stylesheet" />
-
 </head>
 
 <body>
-  <header id="header" class="header dark-background d-flex flex-column">
+  <a class="visually-hidden-focusable" href="#main">Pular para o conteúdo principal</a>
+  <header id="header" class="header dark-background d-flex flex-column" role="banner" aria-label="Cabeçalho do site">
     <!-- Botão de menu para mobile -->
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
@@ -79,7 +83,9 @@
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contato</a></li>
       </ul>
     </nav>
-  </header>
+    </header>
+
+    <main id="main" role="main">
 
   <!-- Seção Hero -->
   <section id="hero" class="hero section dark-background">
@@ -110,7 +116,7 @@
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Aniversário:</strong> <span>7 Jan 1988</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Repositório:</strong> <span>https://github.com/VictorMelkor</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Repositório:</strong> <span><a href="https://github.com/VictorMelkor" target="_blank">GitHub</a></span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Telefone:</strong> <span>(62) 98214-7845</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Localização:</strong> <span>Goiânia, Goiás</span></li>
                 </ul>
@@ -119,7 +125,9 @@
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Idade:</strong> <span>37</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Experiência:</strong> <span>Desenvolvimento backend focado em Python e Django, com projetos acadêmicos e pessoais</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>victor.melkor@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span><a href="mailto:victor.melkor@gmail.com?subject=Olá&body=Mensagem%20aqui">
+            victor.melkor@gmail.com
+          </a></span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Disponível</span></li>
                 </ul>
               </div>
@@ -295,6 +303,34 @@
         <li data-filter=".filter-books">Publicações</li>
       </ul><!-- Fim dos Filtros do Portfólio -->
       <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+                <!-- Exemplo de Projeto -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-frontend">
+          <div class="portfolio-content h-100">
+            <img src="static/img/portfolio/juliatravassos.png" class="img-fluid" alt="Site 4">
+            <div class="portfolio-info">
+              <h4>Site Profissional – Psicóloga Clínica Júlia Travassos</h4>
+              <p class="justificado">Recriação responsiva de site profissional para psicóloga clínica, com HTML, CSS e JS, baseada em versão original em WordPress.</p>
+              <div class="portfolio-links">
+              <a href="static/img/portfolio/juliatravassos.png" title="Recriação responsiva de site profissional para psicóloga clínica, com HTML, CSS e JS, baseada em versão original em WordPress." data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="https://victormelkor.github.io/juliatravassos/" title="Mais Detalhes" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div>
+        </div><!-- Fim do Item de Portfólio -->
+                <!-- Exemplo de Projeto -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-frontend">
+          <div class="portfolio-content h-100">
+            <img src="static/img/portfolio/webdev.png" class="img-fluid" alt="Site 3">
+            <div class="portfolio-info">
+              <h4>Página de Vendas – Sites e Soluções Web</h4>
+              <p class="justificado">Meu site institucional para oferta de serviços em desenvolvimento web responsivo.</p>
+              <div class="portfolio-links">
+              <a href="static/img/portfolio/webdev.png" title="Meu site institucional para oferta de serviços em desenvolvimento web responsivo." data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="https://victormelkor.github.io/victormelkor-webdev/" title="Mais Detalhes" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div>
+        </div><!-- Fim do Item de Portfólio -->
         <!-- Exemplo de Projeto -->
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-frontend">
           <div class="portfolio-content h-100">
@@ -469,7 +505,7 @@
       </div><!-- Novo container visual -->
     </div><!-- End col-lg-5 -->
       <div class="col-lg-7">
-      <div class="p-lg-4 p-3 rounded-4 shadow-sm bg-white">
+  <div class="p-lg-4 p-3 rounded-4 shadow-sm bg-white">
     <form action="https://formsubmit.co/victor.melkor@gmail.com" method="POST" class="row g-3">
       <!-- Campos do formulário -->
       <div class="col-12">
@@ -484,10 +520,6 @@
         <label for="message" class="form-label">Mensagem</label>
         <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
       </div>
-      <!-- reCAPTCHA -->
-      <div class="col-12">
-        <div class="g-recaptcha" data-sitekey="6Lf_InQrAAAAAKLT0cmH7MsQVEDXjHeRL2VYjpmx"></div>
-      </div>
       <!-- Botão -->
       <div class="col-12 text-center">
         <button type="submit" class="btn btn-primary w-100">Enviar</button>
@@ -497,19 +529,14 @@
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem. Entraremos em contato em breve.">
     </form>
-      </div>
-    </div>
-    
-    <!-- Script do reCAPTCHA -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    </div><!-- End row -->
-      </div><!-- End container -->
+  </div>
+</div>
+
     
     </section><!-- End contact section -->
-  </main>
+</main>
 
-
-  <footer id="footer" class="footer position-relative light-background">
+  <footer id="footer" class="footer position-relative light-background" role="contentinfo">
     <div class="container">
       <div class="copyright text-center">
         <p>&copy; <span>Victor Rodrigues</span>. Todos os direitos reservados.</p>
@@ -518,20 +545,15 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Voltar ao topo">
     <i class="bi bi-arrow-up-short"></i>
   </a>
 
   <!-- Preloader -->
-  <div id="preloader"></div>
+  <div id="preloader" role="presentation" aria-hidden="true"></div>
 
-  <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Bootstrap JS -->
+  <!-- Scripts -->
   <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Vendor Scripts -->
   <script src="static/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="static/vendor/aos/aos.js"></script>
   <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
@@ -540,17 +562,11 @@
   <script src="static/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="static/vendor/typed.js/typed.umd.js"></script>
-
-
-  <!-- Custom JS -->
   <script src="static/js/main.js"></script>
 
-
-  <!-- Init AOS -->
   <script>
     AOS.init();
   </script>
-
 </body>
 
 </html>
