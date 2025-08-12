@@ -1,0 +1,49 @@
+.contato {
+    max-width: 1200px;
+    width: 100%;
+    background-color: var(--color-bg);
+    padding: clamp(1.5rem, 2vw, 3rem) clamp(1rem, 2vw, 2rem);
+    margin: auto auto;
+    text-align: center;
+}
+
+.contato h3,
+.contato-bonus h3 {
+    margin-bottom: 2rem;
+}
+
+.contato p {
+    margin-bottom: 2rem;
+}
+
+.contato a {
+    text-decoration: none;
+}
+
+.contato .servico-card {
+    max-width: 250px;
+    margin: auto auto;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contato .servico-card p {
+    margin-bottom: 0;
+}
+
+.contato-bonus {
+    text-align: center;
+    background-color: var(--color-bg-alt);
+    padding: 3em;
+}
+
+@media (min-width: 768px) {
+    .contato {
+        margin-top: 5rem;
+    }
+
+    .contato .servico-card {
+        margin: 0;
+    }
+}

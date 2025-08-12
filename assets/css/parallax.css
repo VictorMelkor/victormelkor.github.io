@@ -1,0 +1,23 @@
+.parallax-section1 {
+    background-image: url('..//img/pexels-sejio402-6477209.jpg');
+    background-color: var(--color-bg-alt);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    height: 40vh;
+}
+
+.parallax-section2 {
+    background-image: url('..//img/pexels-sejio402-6381070.jpg');
+    background-color: var(--color-bg-alt);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    height: 40vh;
+}

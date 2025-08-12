@@ -1,0 +1,163 @@
+.sobre, .valores {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1200px;
+    padding: clamp(1.5rem, 2vw, 2.5rem) clamp(1rem, 2vw, 1.5rem);
+    text-align: center;
+    background-color: var(--color-bg);
+}
+
+.valores {
+    background-color: var(--color-bg);
+    margin-bottom: 5em;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.valor-card {
+    background: var(--color-primary-dark);
+    padding: 1.5rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.valor-card i {
+    font-size: 2.5rem;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+}
+
+.valor-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+}
+
+.valor-card p {
+    color: var(--color-text);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.valor-card:hover {
+    transform: translateY(-15px);
+    background: var(--color-primary);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* MOBILE FIRST - SOBRE */
+.sobre p {
+    padding: clamp(0.8rem, 1vw, 1.2rem) 0 0 clamp(1rem, 2vw, 1.5rem);
+    text-align: left;
+}
+
+.sobre-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-purple-dark);
+    border-radius: 20px;
+    padding: clamp(0.8rem, 1.5vw, 1.2rem);
+    margin-top: clamp(1.5rem, 2vw, 2.5rem);
+    gap: clamp(0.8rem, 1vw, 1.2rem);
+}
+
+.sobre-text {
+    flex: 1;
+    background-color: var(--color-purple-dark);
+    border-radius: 20px;
+    padding: clamp(0.8rem, 1.5vw, 1.2rem);
+    text-align: left;
+}
+
+.sobre-text p {
+    text-align: center;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.sobre-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(0.3rem, 1vw, 0.5rem);
+    margin-bottom: clamp(0.8rem, 1vw, 1rem);
+}
+
+.sobre-header h3 {
+    margin: 0;
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+    text-align: center;
+}
+
+.sobre-header .sobre-icone {
+    width: clamp(30px, 4vw, 40px);
+    height: clamp(30px, 4vw, 40px);
+    text-align: center;
+}
+
+/* RESPONSIVO */
+@media (min-width: 768px) {
+    .valores {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .valor-card {
+        flex: 1;
+        max-width: 32%;
+    }
+
+    .sobre-container {
+        flex-direction: row;
+    }
+
+    .sobre-text {
+        max-width: 50%;
+    }
+
+    .sobre-text p {
+        text-align: left;
+    }
+
+    .sobre-header {
+        justify-content: flex-start;
+    }
+
+    .sobre-header h3 {
+        text-align: left;
+    }
+}
+
+.dev h2 {
+    padding-top: 2rem;
+}
+
+@media (min-width: 1024px) {
+    .sobre-mim {
+        display: flex;
+        flex-direction: row;
+        max-width: 1200px;
+        justify-content: space-evenly;
+        padding-top: 2em;
+    }
+
+    .pai,
+    .dev {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .pai {
+        flex: 1;
+        border-right: 1px solid var(--color-bg-alt);
+        padding-right: 2rem;
+    }
+
+    .dev {
+        flex: 1;
+        padding-left: 1rem;
+    }
+}

@@ -1,0 +1,209 @@
+:root {
+  /* 🎨 Cores */
+  --color-bg-dark: #0d1117; /* fundo principal, preto com toque azulado */
+  --color-bg-alt: #161b22; /* seções alternativas, mais claro que o principal */
+  --color-bg-highlight: #0a1a2f; /* blocos de destaque */
+  
+  --color-primary-dark: #005f73; /* azul petróleo escuro */
+  --color-primary: #2ca6a4; /* azul vibrante */
+  --color-accent: #00f5d4; /* verde água neon */
+  --color-accent-light: #5efc8d; /* verde claro suave */
+  --color-accent-dark: #00c4a7; /* versão mais escura do accent para hover/active */
+  
+  --color-gray-light: #ffffff; /* texto claro */
+  --color-gray-dark: #6b7280; /* cinza intermediário */
+  --color-indigo: #3a86ff; /* azul índigo tecnológico */
+
+  /* 🌈 Gradientes */
+  --gradient-primary: linear-gradient(90deg, var(--color-primary-dark), var(--color-primary), var(--color-bg-dark));
+  --gradient-secondary: linear-gradient(90deg, var(--color-indigo), var(--color-accent));
+
+  /* 🖋 Tipografia */
+  --font-family-base: 'Poppins', sans-serif;
+  --font-size-base: 16px;
+
+  /* ✅ Usando clamp para responsividade automática */
+  --font-size-h1: clamp(1.8rem, 2vw + 1rem, 3rem);
+  --font-size-h2: clamp(1.4rem, 1.5vw + 0.8rem, 2.2rem);
+  --font-size-h3: clamp(1.1rem, 1vw + 0.6rem, 1.8rem);
+
+  /* 📐 Container */
+  --container-width: 100%;
+  --container-padding: clamp(0.75rem, 1vw + 0.5rem, 1.5rem);
+  /* Espaçamentos base */
+  --spacing-xs: clamp(0.25rem, 0.5vw, 0.5rem);
+  --spacing-sm: clamp(0.5rem, 1vw, 1rem);
+  --spacing-md: clamp(1rem, 2vw, 2rem);
+  --spacing-lg: clamp(1.5rem, 3vw, 3rem);
+}
+
+/* 🌞 Tema claro automático */
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-bg-dark: #f6f6f6;
+    --color-bg-alt: #e0e0e0;
+    --color-bg-highlight: #d9d9d9;
+    --color-gray-light: #141414;
+    --color-gray-dark: #555;
+    --gradient-primary: linear-gradient(90deg, var(--color-primary-dark), var(--color-primary), #f6f6f6);
+    --gradient-secondary: linear-gradient(90deg, var(--color-accent), var(--color-indigo));
+  }
+}
+
+/* 🔥 Overrides manuais para tema */
+html.dark {
+  --color-bg: var(--color-bg-dark);
+  --color-text: var(--color-gray-light);
+  --color-accent-1: var(--color-accent);
+  --color-accent-2: var(--color-accent-light);
+  --color-muted: var(--color-gray-dark);
+}
+
+html.light {
+  --color-bg: #f6f6f6;
+  --color-text: #141414;
+  --color-accent-1: var(--color-accent);
+  --color-accent-2: var(--color-accent-light);
+  --color-muted: var(--color-gray-dark);
+}
+
+/* ===========================
+   ESTILOS BASE - MOBILE FIRST
+=========================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  caret-color: transparent;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  transition: background 0.3s ease, color 0.3s ease;
+  margin: 0;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+main {
+  background-color: var(--color-bg);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-top: 8rem;
+}
+
+/* Containers */
+.container {
+  width: var(--container-width);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--container-padding);
+}
+
+/* Botão de troca de tema */
+#theme-toggle {
+  display: none;
+  background: none;
+  color: var(--color-bg-alt);
+  border: none;
+  margin-top: 0.08rem;
+  padding: clamp(0.4rem, 0.8vw, 0.4rem) clamp(1rem, 2vw, 1.2rem);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  
+}
+
+#theme-toggle:hover {
+  background: var(--color-primary);
+  color: #fff;
+  border: 1px solid var(--color-bg);
+}
+
+/* ===========================
+   TIPOGRAFIA
+=========================== */
+h1 {
+  font-size: var(--font-size-h1);
+  margin-bottom: var(--spacing-md);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  margin-bottom: var(--spacing-sm);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-primary);
+}
+
+/* ===========================
+   ANIMAÇÕES
+=========================== */
+
+.animar-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+  visibility: visible;
+}
+
+.animar-section.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animar-section.saindo {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+
+
+
+
+/* ===========================
+   BREAKPOINTS
+=========================== */
+@media (min-width: 600px) {
+  :root {
+    --container-padding: clamp(1rem, 2vw + 0.5rem, 2rem);
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --font-size-h1: clamp(2rem, 1.5vw + 1.2rem, 3rem);
+    --font-size-h2: clamp(1.6rem, 1vw + 1rem, 2.2rem);
+    --font-size-h3: clamp(1.3rem, 0.8vw + 0.9rem, 1.8rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --font-size-h1: clamp(2.5rem, 1vw + 1.5rem, 3.5rem);
+    --font-size-h2: clamp(2rem, 0.9vw + 1.3rem, 2.4rem);
+    --font-size-h3: clamp(1.6rem, 0.6vw + 1.2rem, 2rem);
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --font-size-h1: 3rem;
+    --font-size-h2: 2.2rem;
+    --font-size-h3: 1.8rem;
+  }
+}

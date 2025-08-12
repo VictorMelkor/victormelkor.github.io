@@ -1,0 +1,340 @@
+.especialidades {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    background-color: var(--color-bg);
+    padding: clamp(1.5rem, 2vw, 2.5rem) clamp(1rem, 2vw, 1.5rem);
+    margin-top: clamp(1rem, 2vw, 2rem);
+    text-align: center;
+    color: var(--color-text);
+}
+
+.especialidades p {
+    max-width: clamp(280px, 50vw, 600px);
+    margin: 0 auto clamp(1.5rem, 2vw, 2rem);
+}
+
+.servicos {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.5rem, 2vw, 2rem);
+}
+
+.servico-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-primary-dark);
+    border-radius: 15px;
+    padding: clamp(0.8rem, 1vw, 1.2rem) clamp(0.8rem, 1.5vw, 1rem);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.servico-card i {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    color: var(--color-gray-light);
+    margin-bottom: 0.5rem;
+}
+
+.servico-card h4 {
+    color: #fff;
+    margin: clamp(0.3rem, 0.5vw, 0.5rem) 0;
+    font-size: clamp(1rem, 1vw + 0.2rem, 1.2rem);
+}
+
+.servico-card p {
+    font-size: clamp(0.8rem, 0.5vw + 0.3rem, 0.9rem);
+    color: var(--color-gray-light);
+}
+
+.servico-card:hover {
+    background-color: var(--color-primary);
+    transform: translateY(-25px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+.hard-skills-index {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: clamp(1.5rem, 2vw, 2.5rem) clamp(1rem, 2vw, 1.5rem);
+    border-radius: 0;
+    margin-top: clamp(1.5rem, 2vw, 2.5rem);
+    text-align: center;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+#categoria-hardskill {
+    padding: 2em 0;
+}
+
+.hard-skills p {
+    max-width: clamp(280px, 50vw, 600px);
+    margin: 0 auto clamp(1.5rem, 2vw, 2rem);
+}
+
+.skills-categorias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: clamp(1.5rem, 2vw, 2rem);
+}
+
+.categoria h4 {
+    color: var(--color-text);
+    margin-bottom: clamp(0.8rem, 1vw, 1rem);
+    text-align: left;
+    font-size: clamp(1rem, 1vw + 0.2rem, 1.2rem);
+}
+
+.barra-skill {
+    position: relative;
+    background: var(--color-bg-alt);
+    border-radius: 50px;
+    height: 25px;
+    margin-bottom: clamp(0.5rem, 1vw, 0.8rem);
+    overflow: hidden;
+}
+
+.barra-skill::before {
+    content: attr(data-skill) " (" attr(data-percent) "%)";
+    position: absolute;
+    left: 10px;
+    top: 3px;
+    font-size: 0.9rem;
+    color: var(--color-text);
+    z-index: 2;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.barra-skill::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: var(--width-final, 0);
+    background: var(--gradient-secondary);
+    border-radius: 50px;
+    transition: width 1.5s ease;
+    z-index: 1;
+}
+
+.habilidades {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: clamp(1.5rem, 2vw, 2.5rem) clamp(1rem, 2vw, 1.5rem);
+    background-color: var(--color-bg);
+}
+
+.habilidades h3 {
+    text-align: center;
+}
+
+.curriculo {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 2em 1em;
+    text-align: center;
+    max-width: 1200px;
+}
+
+.curriculo-container {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+}
+
+.curriculo-esquerda {
+    max-width: 600px;
+}
+
+.curriculo-profissional {
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    padding: 0 2em 1em 2em;
+    text-align: left;
+    border: 1px solid var(--color-bg-alt);
+    margin-bottom: 1em;
+    max-width: 600px;
+}
+
+.curriculo-profissional div {
+    padding: 1em 0;
+}
+
+.profissional,
+.curriculo article,
+.habilidades article {
+    margin-top: 0;
+    text-align: left;
+}
+
+.perfil,
+.formacao,
+.idiomas,
+.competencias {
+    background-color: var(--color-bg-alt);
+    padding: 2em 2em 2em 2em;
+}
+
+.perfil a,
+.certificados a,
+.colaboracoes a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.perfil a:hover,
+.certificados a:hover,
+.colaboracoes a:hover {
+    color: var(--color-primary);
+}
+
+.btn-curriculo {
+    display: block;
+    width: 100%;
+    background: var(--color-primary-dark);
+    color: var(--color-text);
+    padding: clamp(0.4rem, 0.8vw, 0.5rem) clamp(1.5rem, 2vw, 2.5rem);
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+    will-change: transform, background-color;
+}
+
+.tecnicas {
+    padding: 1em 0;
+}
+
+.soft-skills {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 20px;
+    padding: clamp(1rem, 1.5vw, 1.5rem);
+    gap: clamp(1.5rem, 2vw, 2rem);
+    margin-top: clamp(1.5rem, 2vw, 2.5rem);
+}
+
+.soft-skill {
+    align-items: flex-start;
+    gap: clamp(1.5rem, 2vw, 2rem);
+    margin-bottom: clamp(0.8rem, 1vw, 1rem);
+}
+
+.soft-skill i {
+    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+    color: var(--color-pink-light);
+    flex-shrink: 0;
+}
+
+.soft-skill h4 {
+    margin: 0;
+    font-size: clamp(1rem, 1vw, 1.1rem);
+    color: #fff;
+}
+
+.soft-skill p {
+    margin: 0.2rem 0 0;
+    font-size: clamp(0.8rem, 0.8vw, 0.9rem);
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+    .servicos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: clamp(0.8rem, 1vw, 1.2rem);
+    }
+
+    .servico-card {
+        flex: 1 1 clamp(40%, 45%, 48%);
+        max-width: clamp(280px, 30vw, 300px);
+    }
+
+    .servico-card h4 {
+        text-align: center;
+    }
+
+    .skills-categorias {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .categoria {
+        flex: 1 1 clamp(40%, 45%, 48%);
+        max-width: clamp(320px, 40vw, 400px);
+    }
+
+    .curriculo-container {
+        margin-top: 2em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .servico-card {
+        flex: 1 1 clamp(25%, 30%, 30%);
+        max-width: 280px;
+    }
+
+    .curriculo {
+        max-width: 1200px;
+    }
+
+    .curriculo-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2em;
+        margin-top: 2em;
+    }
+
+    .curriculo-esquerda {
+        max-width: 600px;
+    }
+
+    .curriculo-profissional {
+        border: 1px solid var(--color-bg-alt);
+        max-width: 600px;
+    }
+
+    .experiencia,
+    .curriculo-portfolio,
+    .certificados,
+    .colaboracoes {
+        padding: 2em 0;
+    }
+
+    .competencias {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .competencias > div {
+        margin-bottom: 1rem;
+    }
+
+    .competencias > h3 {
+        grid-column: 1 / -1;
+    }
+}

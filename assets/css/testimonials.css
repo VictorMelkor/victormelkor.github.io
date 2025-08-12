@@ -1,0 +1,165 @@
+.testimonials {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    background-color: var(--color-bg-alt);
+    padding: clamp(1.5rem, 2vw, 2.5rem) clamp(1rem, 4vw, 2rem);
+    text-align: center;
+    overflow: hidden;
+}
+
+#descricao {
+    margin: 1em auto 2em;
+    text-align: center;
+}
+
+/* Card individual */
+.testimonial-card {
+    background-color: var(--color-primary-dark);
+    border-radius: clamp(15px, 2vw, 20px);
+    padding: clamp(1.5rem, 1.5vw, 1.5rem);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.75rem, 1vw, 1rem);
+    box-sizing: border-box;
+}
+
+/* Header do testimonial */
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(0.75rem, 1vw, 1rem);
+    flex-wrap: wrap;
+}
+
+/* Imagem com gradiente */
+.img-gradient {
+    background: var(--gradient-secondary);
+    padding: clamp(6px, 1vw, 10px);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.img-gradient img,
+.testimonial-img {
+    border-radius: 50%;
+    display: block;
+    object-fit: cover;
+    width: clamp(200px, 7vw, 200px);
+    height: clamp(200px, 7vw, 200px);
+}
+
+/* Info do testimonial */
+.testimonial-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(0.15rem, 0.5vw, 0.3rem);
+    text-align: left;
+}
+
+/* Badge do papel */
+.testimonial-role {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    border-radius: clamp(15px, 2vw, 20px);
+    font-size: clamp(1.2rem, 1.3vw, 1.3em);
+    padding: clamp(0.2em, 0.5vw, 0.3em) clamp(1em, 1vw, 0.8em) clamp(0.1em, 0.3vw, 0.15em);
+    width: fit-content;
+    margin: 0.8rem 0 0.8rem 0;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Nome */
+.testimonial-name {
+    font-weight: bold;
+    font-size: clamp(1.2rem, 1.2vw, 1.2em);
+    color: var(--color-text);
+    margin: 0;
+}
+
+/* Site */
+.testimonial-site {
+    font-size: clamp(0.8rem, 0.6vw, 0.65em);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+}
+
+.testimonial-site a {
+    color: var(--color-text);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Texto */
+.testimonial-text {
+    color: #fff;
+    font-size: clamp(1rem, 0.8vw, 0.8em);
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+/* Swiper container */
+.testimonials-swiper {
+    width: 100%;
+    padding: 1rem 0;
+    box-sizing: border-box;
+}
+
+/* Wrapper e slides */
+.swiper-wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0 clamp(0.75rem, 3vw, 1.5rem);
+    height: auto;
+    transition: all 0.4s ease;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    width: 27px;
+    height: 44px;
+    margin-top: -22px;
+    cursor: pointer;
+    color: #fff;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: block;
+    }
+
+    .img-gradient img,
+    .testimonial-img {
+        width: clamp(180px, 7vw, 180px);
+        height: clamp(180px, 7vw, 180px);
+    }
+
+    .testimonial-header {
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1440px) {
+}

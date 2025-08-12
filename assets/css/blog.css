@@ -1,0 +1,22 @@
+/* ===========================
+   🔹 BLOG - MOBILE FIRST
+=========================== */
+.blog {
+    background-color: var(--color-bg);
+    display: none;
+    flex-direction: column;
+    padding: clamp(1.5rem, 2vw, 2.5rem) clamp(1rem, 2vw, 1.5rem);
+    text-align: center;
+}
+
+
+/* Imagem responsiva com cantos arredondados */
+.blog img {
+    width: 10%;
+    height: auto;
+    border-radius: clamp(12px, 1vw, 20px);
+    display: flex;
+    /* remove espaços embaixo da imagem */
+    object-fit: cover;
+    /* para manter proporção ao preencher o container */
+}

@@ -1,0 +1,217 @@
+.servicos {
+    width: 100%;
+    background-color: var(--color-bg);
+    padding: clamp(1.5rem, 2vw, 2.5rem) clamp(1rem, 2vw, 1.5rem);
+    margin: auto auto;
+    text-align: center;
+}
+
+.servicos h2 {
+    font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.servicos p {
+    width: 100%;
+    margin: 0 auto 2rem auto;
+    color: var(--color-text);
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Cards de serviço */
+.servicos .servico-card {
+    background: var(--color-primary-dark);
+    border-radius: 15px;
+    padding: clamp(1rem, 1vw + 0.5rem, 1.5rem) clamp(1rem, 2vw, 1.2rem);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.servico-card p {
+    margin-bottom: 0;
+    font-size: clamp(0.9rem, 0.5vw + 0.5rem, 1rem);
+    color: var(--color-text);
+    line-height: 1.4;
+}
+
+.servicos .servico-card:hover {
+    transform: translateY(-15px);
+    background-color: var(--color-primary);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.servicos .servico-card i {
+    font-size: clamp(2rem, 2vw + 0.5rem, 2.5rem);
+    color: var(--color-text);
+    margin-bottom: 0.8rem;
+}
+
+.servicos .servico-card h3 {
+    color: #fff;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    font-size: clamp(1.1rem, 1vw + 0.5rem, 1.4rem);
+}
+
+.investimento {
+    background-color: var(--color-bg);
+    padding: clamp(2rem, 2vw, 3rem) clamp(1rem, 2vw, 1.5rem);
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.investimento h2 {
+    font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.investimento > p {
+    max-width: clamp(280px, 50vw, 600px);
+    margin: 0 auto 2rem;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+.planos {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+.plano {
+    background: var(--color-primary-dark);
+    border-radius: 15px;
+    padding: clamp(1rem, 1vw + 0.5rem, 1.5rem) clamp(1rem, 2vw, 1.2rem);
+    padding-bottom: 3.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    color: var(--color-text);
+    cursor: default;
+    position: relative;
+    overflow: visible;
+    margin-bottom: 3rem;
+}
+
+.plano h3 {
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    color: var(--color-text);
+    font-size: clamp(1.1rem, 1vw + 0.5rem, 1.4rem);
+}
+
+.preco {
+    font-size: clamp(1.1rem, 1vw + 0.7rem, 1.3rem);
+    font-weight: 700;
+    background-color: var(--color-primary);
+    padding: 0.8em 1.2em;
+    width: 80%;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.preco:hover {
+    transform: translateX(-50%) scale(1.15);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.preco p {
+    font-size: clamp(0.9rem, 0.5vw + 0.5rem, 1rem);
+    line-height: 1.4;
+    color: var(--color-text);
+}
+
+.contato-servicos {
+    background: var(--color-bg-alt);
+    padding: clamp(1.5rem, 2vw, 3rem) clamp(1rem, 2vw, 1.5rem) clamp(2rem, 3vw, 3rem);
+    margin-top: 2.5rem;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.contato-servicos h2 {
+    font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.contato-servicos p {
+    max-width: clamp(280px, 50vw, 600px);
+    margin: 0 auto 1.8rem;
+    color: var(--color-text);
+    font-weight: 500;
+    font-size: clamp(0.9rem, 0.5vw + 0.5rem, 1rem);
+}
+
+.btn-primary {
+    background: var(--color-primary-dark);
+    color: #fff;
+    padding: clamp(0.5rem, 1vw, 0.75rem) clamp(1.5rem, 3vw, 2rem);
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: clamp(0.9rem, 0.8vw, 1rem);
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background: var(--color-primary);
+    outline: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px) {
+    .servicos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: clamp(1rem, 2vw, 2rem);
+        text-align: center;
+    }
+    .servicos .servico-card {
+        flex: 1 1 clamp(28%, 30%, 32%);
+        max-width: clamp(280px, 30vw, 320px);
+    }
+    .planos {
+        flex-direction: row;
+        justify-content: center;
+        gap: clamp(1rem, 2vw, 2rem);
+    }
+    .plano {
+        flex: 1 1 clamp(28%, 30%, 32%);
+        max-width: clamp(280px, 30vw, 320px);
+    }
+    .contato-servicos {
+        padding: clamp(2.5rem, 3vw, 3rem) clamp(1rem, 2vw, 1.5rem);
+    }
+}
+
+@media (min-width: 1024px) {
+    .servicos {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 6rem auto 0 auto;
+    }
+    .servicos article {
+        flex-wrap: nowrap;
+    }
+    .servico-card,
+    .plano {
+        max-width: 400px;
+    }
+}

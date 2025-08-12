@@ -1,586 +1,395 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR" class="dark">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Victor Rodrigues | Programador Full Stack</title>
-  <meta name="description" content="Portfólio profissional de Victor Rodrigues, programador Full Stack com experiência em Python, Django e desenvolvimento web responsivo." />
-  <meta name="author" content="Victor Rodrigues">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://victormelkor.github.io/" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Favicons -->
-  <link href="static/img/favicon.png" rel="icon" />
+    <!-- SEO -->
+    <title>Victor Melkor - Desenvolvimento Web Full Stack</title>
+    <meta name="description"
+        content="Desenvolvedor Web Full Stack especializado em criar sites profissionais, rápidos e responsivos. Conheça meus serviços e portfólio.">
+    <meta name="keywords"
+        content="desenvolvedor web, sites profissionais, full stack, criação de sites, portfólio, Victor Melkor">
+    <meta name="author" content="Victor Melkor">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect" />
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto&family=Poppins&display=swap" rel="stylesheet" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Victor Melkor - Desenvolvimento Web Full Stack">
+    <meta property="og:description"
+        content="Criação de sites modernos e otimizados para o seu negócio. Confira meu portfólio e serviços.">
+    <meta property="og:image" content="https://i.imgur.com/IaSGa95.png">
+    <meta property="og:url" content="https://victormelkor.github.io">
+    <meta property="og:type" content="website">
 
-  <!-- Bootstrap CSS -->
-  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="static/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet" />
+    <!-- Dark/Light Mode Support -->
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0d0d0d">
 
-  <!-- Vendor CSS -->
-  <link href="static/vendor/aos/aos.css" rel="stylesheet" />
-  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
 
-  <!-- Custom CSS -->
-  <link href="static/css/base.css" rel="stylesheet" />
-  <link href="static/css/utilities.css" rel="stylesheet" />
-  <link href="static/css/layout/header.css" rel="stylesheet" />
-  <link href="static/css/layout/footer.css" rel="stylesheet" />
-  <link href="static/css/layout/navmenu.css" rel="stylesheet" />
-  <link href="static/css/layout/scrolltop.css" rel="stylesheet" />
-  <link href="static/css/sections/hero.css" rel="stylesheet" />
-  <link href="static/css/sections/about.css" rel="stylesheet" />
-  <link href="static/css/sections/portfolio.css" rel="stylesheet" />
-  <link href="static/css/sections/portfolio-details.css" rel="stylesheet" />
-  <link href="static/css/sections/resume.css" rel="stylesheet" />
-  <link href="static/css/sections/services.css" rel="stylesheet" />
-  <link href="static/css/sections/service-details.css" rel="stylesheet" />
-  <link href="static/css/sections/starter-section.css" rel="stylesheet" />
-  <link href="static/css/sections/stats.css" rel="stylesheet" />
-  <link href="static/css/sections/testimonials.css" rel="stylesheet" />
-  <link href="static/css/custom.css" rel="stylesheet" />
-  <link href="static/css/sections/skills.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/hero.css">
+    <link rel="stylesheet" href="assets/css/testimonials.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/habilidades.css">
+    <link rel="stylesheet" href="assets/css/parallax.css">
+
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
-  <a class="visually-hidden-focusable" href="#main">Pular para o conteúdo principal</a>
-  <header id="header" class="header dark-background d-flex flex-column" role="banner" aria-label="Cabeçalho do site">
-    <!-- Botão de menu para mobile -->
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <header class="animar-section">
+        <nav>
+            <p class="logo">VR</p>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu">☰</button>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html" class="active">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="curriculo.html">Currículo</a>
+                <a href="portfolio.html">Portfólio</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="contato.html">Contato</a>
+                <!-- Botão de alternância de tema -->
+                <button id="theme-toggle" aria-label="Alterar tema">🌓</button>
+            </div>
+        </nav>
 
-    <!-- Imagem de perfil -->
-    <div class="profile-img">
-      <img src="static/img/my-profile-img1.jpeg" alt="Victor Rodrigues" class="img-fluid rounded-circle" />
-    </div>
-
-    <!-- Logo e nome -->
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <h1 class="sitename">Victor Rodrigues</h1>
-    </a>
-
-    <!-- Links sociais -->
-    <div class="social-links text-center">
-      <a href="https://www.facebook.com/VictorMelkor" class="facebook"><i class="bi bi-facebook"></i></a>
-      <a href="https://www.instagram.com/victormelkor/" class="instagram"><i class="bi bi-instagram"></i></a>
-      <a href="https://www.linkedin.com/in/victormelkor/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-    </div>
-
-    <!-- Menu de navegação -->
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i> Início</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> Sobre</a></li>
-        <li><a href="#skills"><i class="bi bi-person navicon"></i> Habilidades</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Currículo</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Projetos</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Serviços</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contato</a></li>
-      </ul>
-    </nav>
     </header>
 
-    <main id="main" role="main">
-
-  <!-- Seção Hero -->
-  <section id="hero" class="hero section dark-background">
-    <img src="static/img/hero-bg1.jpg" alt="Fundo" />
-
-  </section>
 
 
-  <main>
-    <!-- About Section -->
-    <section id="about" class="about section">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Sobre Mim</h2>
-        <p class="justificado">Sou estudante de Análise e Desenvolvimento de Sistemas, com forte interesse em tecnologia e resolução de problemas. Há cerca de um ano comecei a me dedicar à programação, focando em Python e lógica de programação. Desenvolvi diversos projetos iniciais para consolidar conhecimentos e, atualmente, busco aprimorar minhas habilidades principalmente no backend com Python e Django, visando construir sistemas web simples, funcionais e bem estruturados para pequenas empresas. Apesar de ainda estar iniciando meus estudos em frontend, estou me integrando ao assunto para complementar minhas soluções. Estou comprometido com o aprendizado contínuo e determinado a evoluir com consistência e dedicação ao longo do tempo.</p>
-      </div><!-- End Section Title -->
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="static/img/my-profile-img1.jpeg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 content">
-            <h2 class="resume-title">Programador FullStack &amp; Desenvolvedor Web.</h2>
-            <p class="fst-italic py-3">
-              Desenvolvo soluções web completas, com backend robusto e eficiente, aliado a interfaces responsivas e modernas.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Aniversário:</strong> <span>7 Jan 1988</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Repositório:</strong> <span><a href="https://github.com/VictorMelkor" target="_blank">GitHub</a></span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Telefone:</strong> <span>(62) 98214-7845</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Localização:</strong> <span>Goiânia, Goiás</span></li>
+    <main>
+        <section class="hero animar-section">
+            <article class="hero-container-title">
+                <h1>Victor Rodrigues,</h1>
+                <h2 class="subtitle">DESENVOLVEDOR WEB</h2>
+                <p>Desenvolvedor Web Full Stack focado em projetos completos, soluções escaláveis e alta performance, garantindo qualidade e prazos.</p>
+
+                <div class="hero-buttons">
+                    <a href="sobre.html" class="btn btn-sobre">Sobre mim</a>
+                    <a href="curriculo.html" class="btn btn-curriculo">Currículo</a>
+                </div>
+            </article>
+            <a href="sobre.html" class="hero-container-link"><img class="hero-container-imagem"
+                    src="assets/img/hero-dark.svg" alt="Abrir página sobre mim"></a>
+
+        </section>
+
+        <section class="parallax-section1">
+        </section>
+
+        <section class="especialidades">
+            <!-- ESPECIALIDADES -->
+            <article class="animar-section">
+                <h3 class="subtitle">ESPECIALIDADES</h3>
+                <h2>Soluções que entregam resultados</h2>
+                <p>Serviços pensados para potencializar sua presença digital e gerar impacto real no seu negócio.</p>
+
+                <div class="servicos">
+                    <div class="servico-card">
+                        <i class="fa-solid fa-code"></i>
+                        <h4>Desenvolvimento Web Completo</h4>
+                        <p>Sites modernos, rápidos e responsivos, feitos sob medida para atender objetivos específicos.
+                        </p>
+                    </div>
+
+                    <div class="servico-card">
+                        <i class="fa-solid fa-palette"></i>
+                        <h4>Design UX/UI Personalizado</h4>
+                        <p>Interfaces atraentes e intuitivas, criadas para proporcionar a melhor experiência ao usuário.
+                        </p>
+                    </div>
+
+                    <div class="servico-card">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <h4>SEO e Performance</h4>
+                        <p>Otimização completa para buscadores e carregamento rápido, garantindo melhor visibilidade
+                            online.</p>
+                    </div>
+
+                    <div class="servico-card">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        <h4>Integração e Manutenção</h4>
+                        <p>Atualizações, suporte e integração de novas funcionalidades para manter seu site sempre
+                            eficiente.</p>
+                    </div>
+
+                    <div class="servico-card">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <h4>Soluções Digitais Sob Medida</h4>
+                        <p>Projetos personalizados que atendem às necessidades únicas de cada cliente.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- HARD SKILLS -->
+            <article class="hard-skills-index animar-section">
+                <h3 class="subtitle">HABILIDADES</h3>
+                <h2>Conhecimento e prática</h2>
+                <p>Minhas principais tecnologias e ferramentas, organizadas por área de atuação.</p>
+                <h3 id="categoria-hardskill" class="subtitle">HARD SKILLS</h3>
+
+                <div class="skills-categorias animar-section">
+                    <!-- FRONTEND -->
+                    <div class="categoria servico-card">
+                        <h4>Frontend</h4>
+                        <div class="barra-skill" data-skill="HTML5" data-percent="80"></div>
+                        <div class="barra-skill" data-skill="CSS3" data-percent="85"></div>
+                        <div class="barra-skill" data-skill="JavaScript (ES6+)" data-percent="70"></div>
+                    </div>
+
+                    <!-- BACKEND -->
+                    <div class="categoria servico-card">
+                        <h4>Backend</h4>
+                        <div class="barra-skill" data-skill="Python" data-percent="80"></div>
+                        <div class="barra-skill" data-skill="Django" data-percent="85"></div>
+                    </div>
+
+                    <!-- DESIGN -->
+                    <div class="categoria servico-card">
+                        <h4>Ferramentas de Design</h4>
+                        <div class="barra-skill" data-skill="Figma" data-percent="65"></div>
+                        <div class="barra-skill" data-skill="Canva" data-percent="75"></div>
+                    </div>
+
+                    <!-- HOSPEDAGEM -->
+                    <div class="categoria servico-card">
+                        <h4>Gerenciamento de Hospedagem Web</h4>
+                        <div class="barra-skill" data-skill="Hospedagem Web" data-percent="80"></div>
+                    </div>
+
+                    <!-- CONTROLE DE VERSÃO -->
+                    <div class="categoria servico-card">
+                        <h4>Versionamento</h4>
+                        <div class="barra-skill" data-skill="Git / GitHub" data-percent="85"></div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- SOFT SKILLS -->
+            <article class="habilidades animar-section">
+                <h3 class="subtitle">SOFT SKILLS</h3>
+                <div class="soft-skills">
+                    <div class="soft-skill servico-card">
+                        <i class="fas fa-comments"></i>
+                        <div>
+                            <h4>Comunicação Clara</h4>
+                            <p>Transmita ideias de forma objetiva, facilitando a colaboração com clientes e parceiros.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="soft-skill servico-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <div>
+                            <h4>Resolução de Problemas</h4>
+                            <p>Capacidade de analisar cenários complexos e propor soluções criativas e eficientes.</p>
+                        </div>
+                    </div>
+
+                    <div class="soft-skill servico-card">
+                        <i class="fas fa-tasks"></i>
+                        <div>
+                            <h4>Organização</h4>
+                            <p>Gestão eficiente do tempo e priorização de tarefas para cumprir prazos com qualidade.</p>
+                        </div>
+                    </div>
+
+                    <div class="soft-skill servico-card">
+                        <i class="fas fa-rocket"></i>
+                        <div>
+                            <h4>Proatividade</h4>
+                            <p>Antecipação de melhorias e busca constante por soluções que agregam valor.</p>
+                        </div>
+                    </div>
+
+                    <div class="soft-skill servico-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h4>Aprendizado Contínuo</h4>
+                            <p>Atualização constante para acompanhar novas tecnologias e tendências do mercado.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+        <section class="parallax-section2">
+        </section>
+
+        <section class="testimonials animar-section">
+
+            <h2>Clientes Felizes</h2>
+            <p id="descricao">Depoimentos de clientes e parceiros que refletem a confiança, qualidade e resultados dos projetos desenvolvidos.</p>
+
+            <h3 class="subtitle">DEPOIMENTOS</h3>
+
+            <!-- Swiper container -->
+            <div class="swiper testimonials-swiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="img-gradient">
+                                    <img src="assets/img/testimonial1.png" class="testimonial-img" alt="">
+                                </div>
+                                <div class="testimonial-info">
+                                    <h5 class="testimonial-role">Psicóloga</h5>
+                                    <h4 class="testimonial-name">Julia Travassos</h4>
+                                    <p class="testimonial-site">
+                                        Site:
+                                        <a href="http://www.gabrielamonteiro.com">www.juliatravassos.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">
+                                Victor foi muito solícito, cuidando inclusive dos menores detalhes do projeto.
+                                Tudo foi entregue antes do prazo, mostrando agilidade e comprometimento.
+                                Estou muito satisfeita e recomendo seu trabalho a todos que buscam profissionalismo e
+                                dedicação.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- Adicione mais swiper-slide conforme necessário -->
+
+                </div>
+
+                <!-- Paginação -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+
+
+
+        <section class="blog animar-section">
+            <h3 class="subtitle">NOVIDADES</h3>
+            <h2>Atualizações Recentes</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis nam enim cumque esse aliquam quis.</p>
+            <div class="services">
+                <img src="assets/img/blog-dark.svg" alt="">
+                <img src="assets/img/blog-dark.svg" alt="">
+                <img src="assets/img/blog-dark.svg" alt="">
+
+            </div>
+        </section>
+
+        <footer class="footer animar-section">
+            <!-- BLOCO 1: Contato -->
+            <div class="footer-contato">
+                <h2>Entre em Contato</h2>
+                <a class="btn" href="#">Contato</a>
+            </div>
+            <hr class="hr-inset">
+
+            <!-- BLOCO 2: Texto + Redes + Menu -->
+            <div class="footer-conteudo">
+                <div class="footer-texto-social">
+                    <div class="footer-text">
+                        <p class="footer-logo">VR</p>
+                        <p>
+                            Desenvolvedor Web Full Stack dedicado à criação de soluções digitais eficientes, responsivas e com excelente experiência para o usuário. Este portfólio apresenta projetos que refletem compromisso com qualidade técnica, inovação e boas práticas de desenvolvimento.
+                        </p>
+                    </div>
+
+                    <div class="footer-social">
+                        <a href="https://wa.me/5562982147845" target="_blank" title="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/victormelkor/" target="_blank" title="instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/victormelkor/" target="_blank" title="linkedin"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/VictorMelkor" target="_blank" title="github"><i class="fab fa-github"></i></a>
+                        <a href="https://victormelkor.github.io" target="_blank" title="portfolio"><i class="fas fa-globe"></i></a>
+                        <a href="mailto:seuemail@dominio.com" target="_blank" title="e-mail"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <ul class="footer-menu">
+                    <li>
+                        <h3>Navegação</h3>
+                    </li>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Curriculo</a></li>
+                    <li><a href="#">Portfólio</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
                 </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Idade:</strong> <span>37</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Experiência:</strong> <span>Desenvolvimento backend focado em Python e Django, com projetos acadêmicos e pessoais</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span><a href="mailto:victor.melkor@gmail.com?subject=Olá&body=Mensagem%20aqui">
-            victor.melkor@gmail.com
-          </a></span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Disponível</span></li>
+
+                <ul class="footer-menu-contato">
+                    <li>
+                        <h3>Contatos</h3>
+                    </li>
+                    <li><a href="#">+55 62 98214-7845</a></li>
+                    <li><a href="#">victor.melkor@gmail.com</a></li>
+                    <li><a href="#">victormelkor.github.io</a></li>
+
                 </ul>
-              </div>
             </div>
-            <p class="mb-1">
-            Disponível para projetos desafiadores, colaborações produtivas e sempre aberto a novas aprendizagens.
-            </p>
-            <p class="mt-0 mb-0">
-              Entre em contato para <a href="#contact" title="Link para contato">conversarmos</a>.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /About Section -->
-    
-    
-    
-    <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    
-        <!-- Skills Section -->
-    <section id="skills" class="skills section light-background">
-    
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-    <h2>Habilidades</h2>
-    <p class="justificado">Minhas principais habilidades técnicas:</p>
-      </div><!-- End Section Title -->
-    
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row skills-content skills-animation">
-      <div class="col-lg-6">
-        <span class="skill"><span>Python</span> <i class="val">80%</i></span>
-        <div class="progress">
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div><!-- End Skills Item -->
-        <span class="skill"><span>Django</span> <i class="val">80%</i></span>
-        <div class="progress">
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div><!-- End Skills Item -->
-        <span class="skill"><span>Git</span> <i class="val">60%</i></span>
-        <div class="progress">
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div><!-- End Skills Item -->
-      </div>
-      <div class="col-lg-6">
-        <span class="skill"><span>JavaScript</span> <i class="val">20%</i></span>
-        <div class="progress">
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div><!-- End Skills Item -->
-        <span class="skill"><span>HTML</span> <i class="val">60%</i></span>
-        <div class="progress">
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div><!-- End Skills Item -->
-        <span class="skill"><span>CSS</span> <i class="val">70%</i></span>
-        <div class="progress">
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div><!-- End Skills Item -->
-      </div>
-    </div>
-    
-      </div>
-    
-    </section><!-- /Skills Section -->
-    
-    
-    <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    
-    <!-- Seção Currículo -->
-    <section id="resume" class="resume section">
-    
-      <!-- Título da Seção -->
-      <div class="container section-title" data-aos="fade-up">
-    <h2>Currículo</h2>
-    <p class="justificado">Resumo das minhas qualificações, experiência profissional e formação acadêmica.</p>
-      </div><!-- Fim Título da Seção -->
-    
-      <div class="container">
-    <div class="row">
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-        <h3 class="resume-title">Resumo</h3>
-        <div class="resume-item pb-0">
-          <h4>Victor Rodrigues</h4>
-          <p class="justificado"><em>Programador Python Full Stack com experiência em desenvolvimento web e projetos completos, focado em soluções escaláveis e modernas.</em></p>
-          <ul>
-            <li>Localização: Goiânia, Goiás</li>
-            <li>Telefone: (62) 98214-7845 </li>
-            <li>Email: victor.melkor@gmail.com</li>
-          </ul>
-        </div><!-- Fim Resume Item -->
-        <h3 class="resume-title">Formação</h3>
-        <div class="resume-item">
-          <h4>Análise e Desenvolvimento de Sistemas</h4>
-          <h5>2024 - 2026</h5>
-          <p class="justificado"><em>Universidade Anhembi Morumbi, São Paulo/SP</em></p>
-          <p class="justificado">Formação voltada para análise de requisitos, modelagem, desenvolvimento, testes e manutenção de sistemas de software, aplicando metodologias ágeis e boas práticas de engenharia de software.</p>
-        </div><!-- Fim Resume Item -->
-        <h3 class="resume-title">Idiomas</h3>
-        <div class="resume -item">
-          <ul>
-            <li>Português: <em>Nativo</em></li>
-            <li>Inglês: <em>Intermediário</em></li>
-          </ul>
-        </div><!-- Fim Resume Item -->
-      </div>
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-        <h3 class="resume-title">Experiência Profissional</h3>
-                <!-- Repita o bloco acima para outras experiências -->
-        <div class="resume-item">
-          <h4>Desenvolvedor Freelancer</h4>
-          <h5>2024 - Atualmente</h5>
-          <p class="justificado"><em>Goiânia/GO</em></p>
-          <ul>
-            <li>Desenvolvimento de projetos fullstack</li>
-            <li>Back-end com Python + Django</li>
-            <li>Front-end responsivo com HTML, CSS e JS vanilla</li>
-    
-          </ul>
-        </div><!-- Fim Resume Item -->
-        <br>
-        <div class="resume-item">
-          <h4>Chefe de Secretaria</h4>
-          <h5>2014 - Atualmente</h5>
-          <p class="justificado"><em>Ministério Público do Estado de Goiás, Goiânia/GO</em></p>
-          <ul>
-            <li>Gerenciamento de contéudo do portal web</li>
-            <li>Análise de Dados e estatísticas</li>
-            <li>Gerenciamento de projetos</li>
-            <li>Design gráfico de projetos</li>
-          </ul>
-        </div><!-- Fim Resume Item -->
-      </div>
-    </div>
-    
-      </div>
-    
-    </section><!-- /Seção Currículo -->
-    
-    
-    <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    
-    <!-- Seção Portfólio -->
-    <section id="portfolio" class="portfolio section light-background">
-    
-      <!-- Título da Seção -->
-      <div class="container section-title" data-aos="fade-up">
-    <h2>Portfólio</h2>
-    <p class="justificado">Alguns dos projetos desenvolvidos, com foco em aplicações web, produtos digitais e soluções personalizadas. Clique para visualizar em detalhes.</p>
-      </div><!-- Fim do Título da Seção -->
-    
-      <div class="container">
-    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-        <li data-filter="*" class="filter-active">Todos</li>
-        <li data-filter=".filter-fullstack">FullStack</li>
-        <li data-filter=".filter-backend">Back-end</li>
-        <li data-filter=".filter-frontend">Front-end</li>
-        <li data-filter=".filter-books">Publicações</li>
-      </ul><!-- Fim dos Filtros do Portfólio -->
-      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-                        <!-- Exemplo de Projeto -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-frontend">
-          <div class="portfolio-content h-100">
-            <img src="static/img/portfolio/bibliot3ca.png" class="img-fluid" alt="Site 6">
-            <div class="portfolio-info">
-              <h4>Bibliot3ca - Sua loja de livros online</h4>
-              <p class="justificado">Front-end de uma loja de livros, com navegação por categorias.</p>
-              <div class="portfolio-links">
-              <a href="static/img/portfolio/bibliot3ca.png" title="Front-end de uma loja de livros, com navegação por categorias." data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="https://victormelkor.github.io/bibliot3ca" title="Mais Detalhes" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div>
-        </div><!-- Fim do Item de Portfólio -->
-                <!-- Exemplo de Projeto -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-frontend">
-          <div class="portfolio-content h-100">
-            <img src="static/img/portfolio/juliatravassos.png" class="img-fluid" alt="Site 5">
-            <div class="portfolio-info">
-              <h4>Site Profissional – Psicóloga Clínica Júlia Travassos</h4>
-              <p class="justificado">Recriação responsiva de site profissional para psicóloga clínica, com HTML, CSS e JS, baseada em versão original em WordPress.</p>
-              <div class="portfolio-links">
-              <a href="static/img/portfolio/juliatravassos.png" title="Recriação responsiva de site profissional para psicóloga clínica, com HTML, CSS e JS, baseada em versão original em WordPress." data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="https://victormelkor.github.io/juliatravassos/" title="Mais Detalhes" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div>
-        </div><!-- Fim do Item de Portfólio -->
-                <!-- Exemplo de Projeto -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-frontend">
-          <div class="portfolio-content h-100">
-            <img src="static/img/portfolio/webdev.png" class="img-fluid" alt="Site 4">
-            <div class="portfolio-info">
-              <h4>Página de Vendas – Sites e Soluções Web</h4>
-              <p class="justificado">Meu site institucional para oferta de serviços em desenvolvimento web responsivo.</p>
-              <div class="portfolio-links">
-              <a href="static/img/portfolio/webdev.png" title="Meu site institucional para oferta de serviços em desenvolvimento web responsivo." data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="https://victormelkor.github.io/victormelkor-webdev/" title="Mais Detalhes" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div>
-        </div><!-- Fim do Item de Portfólio -->
-        <!-- Exemplo de Projeto -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-frontend">
-          <div class="portfolio-content h-100">
-            <img src="static/img/portfolio/login-responsivo1.jpeg" class="img-fluid" alt="Site 3">
-            <div class="portfolio-info">
-              <h4>Tela de Login Responsiva</h4>
-              <p class="justificado">Tela de login personalizada e responsiva para todo tipo de telas</p>
-              <div class="portfolio-links">
-              <a href="static/img/portfolio/login-responsivo.png" title="Tela de Login personalizada e responsiva a todos os tamanhos de tela" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="https://victormelkor.github.io/login-responsivo/" title="Mais Detalhes" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div>
-        </div><!-- Fim do Item de Portfólio -->
-        <!-- Exemplo de Projeto -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-fullstack">
-          <div class="portfolio-content h-100">
-            <img src="static/img/portfolio/taskmanager.png" class="img-fluid" alt="Site 1">
-            <div class="portfolio-info">
-              <h4>TaskManager Pro</h4>
-              <p class="justificado">Sistema web de gerenciamento de tarefas.</p>
-              <div class="portfolio-links">
-              <a href="static/img/portfolio/taskmanager.png" title="TaskManager Pro: uma ferramenta de produtividade e gerenciamento de tarefas" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="https://taskmanager-pro.onrender.com/" title="Mais Detalhes" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div>
-        </div><!-- Fim do Item de Portfólio -->
-                <!-- Exemplo de Projeto -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-backend">
-          <div class="portfolio-content h-100">
-            <img src="static/img/portfolio/backend.png" class="img-fluid" alt="Código 1">
-            <div class="portfolio-info">
-              <h4>User Manager</h4>
-              <p class="justificado">Modelagem de dados para criação de usuários com segurança e robustez.</p>
-              <div class="portfolio-links">
-              <a href="static/img/portfolio/backend.png" title="User Manager: modelagem de dados para personalização de login seguro" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="https://github.com/VictorMelkor/taskmanager-pro/blob/main/userauth/models.py" title="Mais Detalhes" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div>
-        </div><!-- Fim do Item de Portfólio -->
-    
-                        <!-- Exemplo de Projeto -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-frontend filter-fullstack">
-          <div class="portfolio-content h-100">
-            <img src="static/img/portfolio/doit.png" class="img-fluid" alt="Site 2">
-            <div class="portfolio-info">
-              <h4>do.it</h4>
-              <p class="justificado">Implementação de backend no projeto do.it</p>
-              <div class="portfolio-links">
-              <a href="static/img/portfolio/doit.png" title="Backend completo usando Python com Django REST Framework, permitindo persistência de dados, CRUD, autenticação de usuários e integração com o frontend via API." data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="https://doitnow.up.railway.app/" title="Mais Detalhes" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div>
-        </div><!-- Fim do Item de Portfólio -->
-          </div><!-- End Portfolio Container -->
-        </div>
-      </div>
-    </section><!-- /Portfolio Section -->
-    
-    
-    <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    
-        <!-- Seção Serviços -->
-    <section id="services" class="services section">
-    
-      <!-- Título da Seção -->
-      <div class="container section-title" data-aos="fade-up">
-    <h2>Serviços</h2>
-    <p class="justificado">Atuo no desenvolvimento de soluções digitais sob medida, utilizando boas práticas de código, foco em performance e design responsivo. Veja abaixo algumas das áreas em que posso contribuir.</p>
-      </div><!-- Fim do Título da Seção -->
-    
-      <div class="container">
-    <div class="row gy-4">
-      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-        <div class="icon flex-shrink-0"><i class="bi bi-code-slash"></i></div>
-        <div>
-          <h4 class="title"><a href="#" class="stretched-link">Desenvolvimento Web</a></h4>
-          <p class="description justificado">Criação de sites e sistemas web utilizando tecnologias como Django, Python, HTML, CSS e JavaScript.</p>
-        </div>
-      </div><!-- Fim do Serviço -->
-      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-        <div class="icon flex-shrink-0"><i class="bi bi-server"></i></div>
-        <div>
-          <h4 class="title"><a href="#" class="stretched-link">Back-end & APIs</a></h4>
-          <p class="description justificado">Modelagem de dados, criação de APIs RESTful e integração de sistemas com foco em segurança e escalabilidade.</p>
-        </div>
-      </div><!-- Fim do Serviço -->
-      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-        <div class="icon flex-shrink-0"><i class="bi bi-brush"></i></div>
-        <div>
-          <h4 class="title"><a href="#" class="stretched-link">Frontend Responsivo</a></h4>
-          <p class="description justificado">Construção de interfaces modernas e adaptáveis, com atenção à experiência do usuário e compatibilidade entre dispositivos.</p>
-        </div>
-      </div><!-- Fim do Serviço -->
-      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-        <div class="icon flex-shrink-0"><i class="bi bi-database-check"></i></div>
-        <div>
-          <h4 class="title"><a href="#" class="stretched-link">Banco de Dados</a></h4>
-          <p class="description justificado">Criação e manutenção de bases de dados relacionais (PostgreSQL, SQLite) e modelagem eficiente para aplicações web.</p>
-        </div>
-      </div><!-- Fim do Serviço -->
-      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-        <div class="icon flex-shrink-0"><i class="bi bi-cloud-upload"></i></div>
-        <div>
-          <h4 class="title"><a href="#" class="stretched-link">Deploy e Hospedagem</a></h4>
-          <p class="description justificado">Configuração e publicação de sites e aplicações em servidores gratuitos ou pagos, como Render, Vercel, ou VPS.</p>
-        </div>
-      </div><!-- Fim do Serviço -->
-      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-        <div class="icon flex-shrink-0"><i class="bi bi-git"></i></div>
-        <div>
-          <h4 class="title"><a href="#" class="stretched-link">Versionamento e Git</a></h4>
-          <p class="description justificado">Organização de código-fonte com Git e GitHub, incluindo controle de versões, branches e colaboração em equipe.</p>
-        </div>
-      </div><!-- Fim do Serviço -->
-    </div>
-    
-      </div>
-    
-    </section><!-- /Seção Serviços -->
-    
-    
-    <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-  <!-- Contact Section -->
-    <section id="contact" class="contact section light-background">
-    
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-    <h2>Contato</h2>
-    <p class="justificado">Entre em contato para parcerias, projetos ou outras informações.</p>
-      </div><!-- End Section Title -->
-    
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row gy-4">
-      <div class="col-lg-5">
-      <div class="p-lg-4 p-3 rounded-4 shadow-sm bg-white">
-    <div class="info-wrap">
-      <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-        <i class="bi bi-geo-alt flex-shrink-0"></i>
-        <div>
-          <h3 class="contact-title">Localização</h3>
-          <p class="justificado">Goiânia - GO</p>
-        </div>
-      </div>
-      <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-        <i class="bi bi-telephone flex-shrink-0"></i>
-        <div>
-          <h3 class="contact-title">Whatsapp</h3>
-          <a href="https://wa.me/5562982147845" target="_blank" rel="noopener noreferrer">
-            (62) 98214-7845
-          </a>
-        </div>
-      </div><br>
-      <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-        <i class="bi bi-envelope flex-shrink-0"></i>
-        <div>
-          <h3 class="contact-title">Email</h3>
-          <a href="mailto:victor.melkor@gmail.com?subject=Olá&body=Mensagem%20aqui">
-            victor.melkor@gmail.com
-          </a>
-        </div>
-      </div>
-      <div class="mt-4">
-        <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15286.281660940309!2d-49.24816993794225!3d-16.698366895214726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef1a5f78e7ce5%3A0x8b784cafeab76eaf!2sJardim%20Goi%C3%A1s%2C%20Goi%C3%A2nia%20-%20GO!5e0!3m2!1spt-BR!2sbr!4v1750516936022!5m2!1spt-BR!2sbr"  frameborder="0" style="border:0; width: 100%; height: 250px;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="-1"></iframe>
-      </div>
-    </div><!-- End info-wrap -->
-      </div><!-- Novo container visual -->
-    </div><!-- End col-lg-5 -->
-      <div class="col-lg-7">
-  <div class="p-lg-4 p-3 rounded-4 shadow-sm bg-white">
-    <form action="https://formsubmit.co/victor.melkor@gmail.com" method="POST" class="row g-3">
-      <!-- Campos do formulário -->
-      <div class="col-12">
-        <label for="name" class="form-label">Nome</label>
-        <input type="text" id="name" name="name" class="form-control" required>
-      </div>
-      <div class="col-12">
-        <label for="email" class="form-label">Email</label>
-        <input type="email" id="email" name="email" class="form-control" required>
-      </div>
-      <div class="col-12">
-        <label for="message" class="form-label">Mensagem</label>
-        <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
-      </div>
-      <!-- Botão -->
-      <div class="col-12 text-center">
-        <button type="submit" class="btn btn-primary w-100">Enviar</button>
-      </div>
-      <!-- Campos ocultos opcionais do FormSubmit -->
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem. Entraremos em contato em breve.">
-    </form>
-  </div>
-</div>
+            <hr class="hr-inset">
 
-    
-    </section><!-- End contact section -->
-</main>
+            <!-- BLOCO 3: Créditos -->
+            <div class="creditos">
+                <div class="copyright">
+                    <small>&copy; <span id="ano-atual"></span> | Todos os direitos reservados</small><br>
+                    <small>Desenvolvido por <a href="#">Victor Rodrigues</a></small><br>
+                </div>
+                <div class="termos">
+                    <small><a href="#">Termos e Condições</a></small><br />
+                    <small><a href="#">Políticas de Privacidade</a></small>
+                </div>
+            </div>
+        </footer>
 
-  <footer id="footer" class="footer position-relative light-background" role="contentinfo">
-    <div class="container">
-      <div class="copyright text-center">
-        <p>&copy; <span>Victor Rodrigues</span>. Todos os direitos reservados.</p>
-      </div>
-    </div>
-  </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Voltar ao topo">
-    <i class="bi bi-arrow-up-short"></i>
-  </a>
 
-  <!-- Preloader -->
-  <div id="preloader" role="presentation" aria-hidden="true"></div>
+    </main>
 
-  <!-- Scripts -->
-  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="static/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="static/vendor/aos/aos.js"></script>
-  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="static/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="static/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="static/vendor/typed.js/typed.umd.js"></script>
-  <script src="static/js/main.js"></script>
 
-  <script>
-    AOS.init();
-  </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+
+    <!-- JS do controle de tema -->
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/habilidades.js"></script>
+    <script src="assets/js/testimonials-swiper.js"></script>
+    <script src="assets/js/animacoes.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const anoAtual = new Date().getFullYear();
+            document.getElementById("ano-atual").textContent = anoAtual;
+        });
+    </script>
+
+
 </body>
 
 </html>
