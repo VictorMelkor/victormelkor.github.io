@@ -37,7 +37,7 @@
   --spacing-lg: clamp(1.5rem, 3vw, 3rem);
 }
 
-/* 🌞 Tema claro automático */
+/* 🌞 Tema claro automático 
 @media (prefers-color-scheme: light) {
   :root {
     --color-bg-dark: #f6f6f6;
@@ -48,7 +48,7 @@
     --gradient-primary: linear-gradient(90deg, var(--color-primary-dark), var(--color-primary), #f6f6f6);
     --gradient-secondary: linear-gradient(90deg, var(--color-accent), var(--color-indigo));
   }
-}
+}*/
 
 /* 🔥 Overrides manuais para tema */
 html.dark {
@@ -59,13 +59,13 @@ html.dark {
   --color-muted: var(--color-gray-dark);
 }
 
-html.light {
+/*html.light {
   --color-bg: #f6f6f6;
   --color-text: #141414;
   --color-accent-1: var(--color-accent);
   --color-accent-2: var(--color-accent-light);
   --color-muted: var(--color-gray-dark);
-}
+}*/
 
 /* ===========================
    ESTILOS BASE - MOBILE FIRST
