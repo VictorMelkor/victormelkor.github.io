@@ -171,6 +171,52 @@ h3 {
   transform: translateY(-50px);
 }
 
+.btn-whatsapp {
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    background-color: var(--color-primary-dark);
+    color: white;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 10000;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+  .btn-whatsapp:hover {
+    background-color: var(--color-primary);
+  }
+
+  /* Container fixo para Scroll Top - inferior direito */
+  .btn-scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--color-bg-alt);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    display: none; /* só aparece ao rolar a página */
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    transition: background-color 0.3s ease;
+  }
+  .btn-scroll-top:hover {
+    background-color: var(--color-primary-dark);
+  }
+
 
 
 
@@ -205,5 +251,9 @@ h3 {
     --font-size-h1: 3rem;
     --font-size-h2: 2.2rem;
     --font-size-h3: 1.8rem;
+  }
+
+  .btn-whatsapp {
+    display: flex;
   }
 }
