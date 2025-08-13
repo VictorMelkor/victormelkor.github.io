@@ -1,7 +1,7 @@
-.parallax-section1 {
-    background-image: url('..//img/pexels-sejio402-6477209.jpg');
+/* MOBILE FIRST (padrão) */
+.parallax-section1,
+.parallax-section2 {
     background-color: var(--color-bg-alt);
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,14 +10,22 @@
     height: 40vh;
 }
 
+/* Imagens menores e sem 'fixed' no mobile */
+.parallax-section1 {
+    background-image: url('../img/pexels-sejio402-6477209.jpg');
+}
 .parallax-section2 {
-    background-image: url('..//img/pexels-sejio402-6381070.jpg');
-    background-color: var(--color-bg-alt);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    height: 40vh;
+    background-image: url('../img/pexels-sejio402-6381070.jpg');
+}
+
+/* DESKTOP (ativa o efeito parallax) */
+@media (min-width: 768px) {
+    .parallax-section1 {
+        background-image: url('../img/pexels-sejio402-6477209.jpg');
+        background-attachment: fixed;
+    }
+    .parallax-section2 {
+        background-image: url('../img/pexels-sejio402-6381070.jpg');
+        background-attachment: fixed;
+    }
 }
