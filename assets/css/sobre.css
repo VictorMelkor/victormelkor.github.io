@@ -98,6 +98,10 @@
     text-align: center;
 }
 
+.sobre-mim div {
+    padding-bottom: 3em;
+}
+
 /* RESPONSIVO */
 @media (min-width: 768px) {
     .valores {
@@ -150,7 +154,7 @@
         width: 100%;
     }
 
-    .pai {
+    .pai div{
         flex: 1;
         border-right: 1px solid var(--color-bg-alt);
         padding-right: 2rem;
