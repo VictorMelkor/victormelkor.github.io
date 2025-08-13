@@ -321,6 +321,10 @@
         padding: 2em 0;
     }
 
+    .experiencia li {
+        padding: 0.5em 0;
+    }
+
     .competencias {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

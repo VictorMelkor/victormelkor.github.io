@@ -29,5 +29,3 @@ const observador = new IntersectionObserver((entradas) => {
 document.querySelectorAll('.animar-section').forEach(el => observador.observe(el));
 
 
-
-
