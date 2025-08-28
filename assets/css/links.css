@@ -1,0 +1,34 @@
+.linktree {
+    max-width: 80vw;
+    width: 100%;
+    background-color: var(--color-bg);
+    padding: clamp(1.5rem, 2vw, 3rem) clamp(1rem, 2vw, 2rem);
+    margin: auto auto;
+    text-align: center;
+
+}
+
+.img-tree {
+    border-radius: 100%;
+}
+
+.trees li {
+    display: flex;
+    flex-direction: column;   
+}
+
+.trees a {
+    color: var(--color-text);
+    text-decoration: none;
+    background-color: var(--color-primary-dark);
+    padding: 0.5em 1em;
+    margin: 1em 0;
+    border-radius: 50px;
+    
+}
+
+@media (min-width: 1024px) {
+    .linktree {
+        max-width: 40vw;
+    }
+}
